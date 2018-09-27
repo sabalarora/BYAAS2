@@ -20,6 +20,21 @@ console.log('%c Proudly Crafted with ZiOn.', 'background: #222; color: #bada55')
         });
         wow.init();
 
+        var lastClassSet = null;
+        $(".swatches").colorSelector({
+            url: "./assets/components/color-swatches.json",
+            onSwatchClicked: function(event){
+                $(".gallery-image").removeClass(lastClassSet);
+                if(event.colorCss){
+                    $(".gallery-image").addClass(event.colorCss);
+                    lastClassSet = event.colorCss;
+                    return;
+                }
+                $(".gallery-image").prop("style", "background-color:"+event.textContent+";");
+            }
+        }).then(function(response){
+            $(".gallery-image").prop("style", "background-color:black;");
+        })
 
         /* ---------------------------------------------- /*
          * Scroll top
