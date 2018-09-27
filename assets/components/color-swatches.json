@@ -26,13 +26,18 @@
         },
         {
             "name" : "blue",
-            "color" : "blue"
+            "color" : "#0116b1"
         }
+        
     ],
     "textures": [
         {
             "name" : "black-vein",
             "class": "swatch-texture-black-vein"
+        },
+        {
+            "name" : "light blue",
+            "class" : "swatch-color-light-blue"
         }
     ]
 }

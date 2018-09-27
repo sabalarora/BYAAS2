@@ -14,11 +14,6 @@
         },"");
         return "<ul>"+listItems+"</ul>"
     }
-    function onClickSelectedColor(event){
-        $(".color-is-selected").removeClass("color-is-selected");
-        $(this).addClass("color-is-selected");
-        swatchesDescriptionName.html(event.target.textContent);
-    }
 
     $.fn.colorSelector = function(options){
         var defer = $.Deferred();
@@ -29,8 +24,9 @@
                 swatchesColor.html(generateColorSwatches(response.colors));
                 swatchesTextures.html(generateTextureSwatches(response.textures));
                 $(".color-selection").click(function(event){
-                    onClickSelectedColor(event);
-                    
+                    $(".color-is-selected").removeClass("color-is-selected");
+                    $(this).addClass("color-is-selected");
+                    swatchesDescriptionName.html(event.target.textContent);
                     options.onSwatchClicked.call(this, {
                         textContent : event.target.textContent,
                         colorCss: $(event.currentTarget).data("color")

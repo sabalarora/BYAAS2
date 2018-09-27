@@ -11,6 +11,10 @@ li.color{
     width: 75px;
     height:75px;
 }
+li.color:hover{
+    width: 100px;
+    height:100px;
+}
 .hide-text{
     text-indent: 100%;
     white-space: nowrap;
@@ -39,6 +43,9 @@ li.color{
 }
 .swatch-color-green{
     background-color: green;
+}
+.swatch-color-light-blue{
+    background-image: url("../components/colors/220x350-blue-gloss-0069e1.jpg");
 }
 .swatch-texture-black-vein{
     background-image: url("../components/textures/720x1210px-black-vein.jpg");
