@@ -1,0 +1,38 @@
+{
+    "colors" : [
+        {
+            "name" : "black",
+            "color" : "#000000"
+        },
+        {
+            "name" : "purple",
+            "color" : "#FF00FF"
+        },
+        {
+            "name" : "red",
+            "color" : "red"
+        },
+        {
+            "name" : "yellow",
+            "color" : "yellow"
+        },
+        {
+            "name" : "orange",
+            "color" : "orange"
+        },
+        {
+            "name" : "green",
+            "color" : "green"
+        },
+        {
+            "name" : "blue",
+            "color" : "blue"
+        }
+    ],
+    "textures": [
+        {
+            "name" : "black-vein",
+            "class": "swatch-texture-black-vein"
+        }
+    ]
+}
