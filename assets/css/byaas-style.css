@@ -1,6 +1,12 @@
 .navbar-center-item{
     padding: 0px !important;
 }
+@media (min-width: 768px){
+    .navbar-center-item {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+}
 .navbar-menu-item{
     padding-top:20px;
 }
@@ -11,6 +17,12 @@
 .navbar-nav > li {
     float: none;
     display: inline-block; 
+}
+@media (max-width: 767px){
+    .navbar-nav > li {
+        float: none;
+        display: block; 
+    }
 }
 
 li.color{
