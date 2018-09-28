@@ -40,6 +40,7 @@
     }
     
     $.fn.colorSelector.defaults = {
-        url: null
+        url: null,
+        onSwatchClicked: null
     };
 })(jQuery);

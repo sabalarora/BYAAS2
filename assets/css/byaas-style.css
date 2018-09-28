@@ -1,10 +1,18 @@
-.navbar-center{
-    padding-left: 14%;
-    width:34%;
+.navbar-center-item{
+    padding: 0px !important;
 }
-.navbar-center > li > a{
-    padding: 0px;
+.navbar-menu-item{
+    padding-top:20px;
 }
+.navbar-nav {
+    width: 100%;
+    text-align: center;
+}
+.navbar-nav > li {
+    float: none;
+    display: inline-block; 
+}
+
 li.color{
     border: 2px #cccccc solid;
     display: inline-block;
@@ -49,4 +57,13 @@ li.color:hover{
 }
 .swatch-texture-black-vein{
     background-image: url("../components/textures/720x1210px-black-vein.jpg");
+}
+.swatch-texture-silver-vein{
+    background-image: url("../components/textures/720x1210px-silver-vein.jpg");
+}
+.swatch-texture-copper-vein{
+    background-image: url("../components/textures/720x1210px-copper-vein.jpg");
+}
+.swatch-texture-hammer-tor{
+    background-image: url("../components/textures/720x1210px-bronze-hammertor.jpg");
 }

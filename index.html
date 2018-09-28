@@ -62,41 +62,52 @@
       <div class="loader">Loading...</div>
     </div>
     <nav class="navbar navbar-custom navbar-fixed-top navbar-transparent" role="navigation">
-
-      <div class="container">
+      <div class="container-fluid">
 
         <div class="navbar-header">
-
-        </div>
-        <!-- <div class="navbar-header">
-          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#custom-collapse"><span class="sr-only">Toggle
-              navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#custom-collapse" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">
-              <img src="assets/img/Byaas logo.jpg" width="75" height="92" alt="">
-            </a>
-        </div> -->
+        </div>
 
         <div class="collapse navbar-collapse" id="custom-collapse">
-            <ul class="nav navbar-nav navbar-left">
-                <li class="dropdown"><a class="dropdown" href="#" data-toggle="dropdown">Home</a>
+            <ul class="nav navbar-nav">
+                <li class="pull-left navbar-menu-item"><a href="#" data-toggle="dropdown">Home</a></li>
+                <li class="pull-left navbar-menu-item"><a class="dropdown" href="#" data-toggle="dropdown">Decorative Panels</a></li>
+                <li class="pull-left navbar-menu-item"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Gates</a></li>
+                <li class="hidden-xs">
+                  <a class="navbar-center-item">
+                    <img src="assets/img/Byaas logo.jpg" width="75" height="92" alt="" />
+                  </a>
                 </li>
-                <li class="dropdown"><a class="dropdown" href="decorative-pannels.html" data-toggle="dropdown">Decorative Panels</a>
-                </li>
-                <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Gates</a>
-                </li>
-              </ul>
-              <ul class="nav navbar-nav navbar-center">
-                  <li><a><img src="assets/img/Byaas logo.jpg" width="75" height="92" alt=""/></a></li>
-                </ul>
-          <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown pull-right navbar-menu-item"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Railing</a></li>
+                <li class="dropdown pull-right navbar-menu-item"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Wall Accents</a></li>
+                <li class="dropdown pull-right navbar-menu-item"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Lighting & Décor</a></li>
+            </ul>
+          <!-- <ul class="nav navbar-nav navbar-left">
+            <li class="dropdown"><a class="dropdown" href="#" data-toggle="dropdown">Home</a>
+            </li>
+            <li class="dropdown"><a class="dropdown" href="#" data-toggle="dropdown">Decorative Panels</a>
+            </li>
+            <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Gates</a>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-center hidden-xs center-block" style="display:block;width:75px;">
+            <li><a><img src="assets/img/Byaas logo.jpg" width="75" height="92" alt="" /></a></li>
+          </ul> -->
+          <!-- <ul class="nav navbar-nav navbar-right">
+
+
             <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Railing</a>
             </li>
             <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Wall Accents</a>
             </li>
             <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Lighting & Décor</a>
             </li>
-            <!--li.dropdown.navbar-cart-->
+            li.dropdown.navbar-cart-->
             <!--    a.dropdown-toggle(href='#', data-toggle='dropdown')-->
             <!--        span.icon-basket-->
             <!--        |-->
@@ -142,9 +153,9 @@
             <!--                    input.form-control(type='text', placeholder='Search...')-->
             <!--                    |-->
             <!--                    button.search-btn(type='submit')-->
-            <!--                        i.fa.fa-search-->
+            <!--                        i.fa.fa-search
 
-          </ul>
+          </ul> -->
         </div>
       </div>
     </nav>
@@ -238,15 +249,18 @@
                     </div>
                   </div>
 
-                  <div class="swatches">
-                    <h3>Color Options</h3><hr/>
-                    <div class="swatches-color"></div><hr/>
-                    <div class="swatches-texture"></div><hr/>
-                    <div class="swatches-description">
-                      <span class="swatches-description-name"></span>
-                    </div>
-                  </div>
-                  <!-- <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="swatches">
+              <h3>Color Options</h3>
+              <hr />
+              <div class="swatches-color"></div>
+              <hr />
+              <div class="swatches-texture"></div>
+              <hr />
+              <div class="swatches-description">
+                <span class="swatches-description-name"></span>
+              </div>
+            </div>
+            <!-- <div class="col-md-3 col-sm-6 col-xs-12">
                     <div class="features-item">
                       <div class="features-icon"><span class="icon-lightbulb"></span></div>
                       <h3 class="features-title font-alt">Ideas and concepts</h3>
@@ -302,11 +316,11 @@
                       <p>Careful attention to detail and clean, well structured code ensures a smooth user experience for all your visitors.</p>
                     </div>
                   </div> -->
-                </div>
-              </div>
           </div>
-        </section>
-      <!--
+        </div>
+    </div>
+    </section>
+    <!--
         <section class="module" id="services">
           <div class="container">
             <div class="row">
@@ -376,7 +390,7 @@
           </div>
         </section>
 -->
-      <!--
+    <!--
         <section class="module bg-dark-60" data-background="assets/images/section-6.jpg">
           <div class="container">
             <div class="row">
@@ -391,7 +405,7 @@
           </div>
         </section>
 -->
-      <!--
+    <!--
         <section class="module pb-0" id="works">
           <div class="container">
             <div class="row">
@@ -454,7 +468,7 @@
           </ul>
         </section>
 -->
-      <!--
+    <!--
         <section class="module-small bg-dark">
           <div class="container">
             <div class="row">
@@ -471,7 +485,7 @@
           </div>
         </section>
 -->
-      <!--
+    <!--
         <section class="module" id="alt-features">
           <div class="container">
             <div class="row">
@@ -524,8 +538,8 @@
           </div>
         </section>
 -->
-      <hr class="divider-w">
-      <!--
+    <hr class="divider-w">
+    <!--
         <section class="module" id="team">
           <div class="container">
             <div class="row">
@@ -600,7 +614,7 @@
         </section>
 -->
 
-      <!--
+    <!--
         <section class="module" id="news">
           <div class="container">
             <div class="row">
@@ -1189,7 +1203,7 @@
           </div>
         </section>
 -->
-      <!--
+    <!--
         <section class="module bg-dark-60 pt-0 pb-0 parallax-bg testimonial" data-background="assets/images/testimonial_bg.jpg">
           <div class="testimonials-slider pt-140 pb-140">
             <ul class="slides">
@@ -1269,32 +1283,32 @@
           </div>
         </section>
 -->
-      <div class="module-small bg-dark">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-6 col-md-6 col-lg-4 col-lg-offset-2">
-              <div class="callout-text font-alt">
-                <h3 class="callout-title">Subscribe now</h3>
-                <p>We will not spam your email.</p>
-              </div>
+    <div class="module-small bg-dark">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 col-md-6 col-lg-4 col-lg-offset-2">
+            <div class="callout-text font-alt">
+              <h3 class="callout-title">Subscribe now</h3>
+              <p>We will not spam your email.</p>
             </div>
-            <div class="col-sm-6 col-md-6 col-lg-4">
-              <div class="callout-btn-box">
-                <form id="subscription-form" role="form" method="post" action="php/subscribe.php">
-                  <div class="input-group">
-                    <input class="form-control" type="email" id="semail" name="semail" placeholder="Your Email"
-                      data-validation-required-message="Please enter your email address." required="required" /><span
-                      class="input-group-btn">
-                      <button class="btn btn-g btn-round" id="subscription-form-submit" type="submit">Submit</button></span>
-                  </div>
-                </form>
-                <div class="text-center" id="subscription-response"></div>
-              </div>
+          </div>
+          <div class="col-sm-6 col-md-6 col-lg-4">
+            <div class="callout-btn-box">
+              <form id="subscription-form" role="form" method="post" action="php/subscribe.php">
+                <div class="input-group">
+                  <input class="form-control" type="email" id="semail" name="semail" placeholder="Your Email"
+                    data-validation-required-message="Please enter your email address." required="required" /><span
+                    class="input-group-btn">
+                    <button class="btn btn-g btn-round" id="subscription-form-submit" type="submit">Submit</button></span>
+                </div>
+              </form>
+              <div class="text-center" id="subscription-response"></div>
             </div>
           </div>
         </div>
       </div>
-      <!--
+    </div>
+    <!--
         <section class="module" id="contact">
           <div class="container">
             <div class="row">
@@ -1330,6 +1344,7 @@
           </div>
         </section>
 -->
+<<<<<<< HEAD
       <hr class="divider-d">
       <footer class="footer bg-dark">
         <div class="container">
@@ -1341,10 +1356,23 @@
               <div class="footer-social-links"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a
                   href="#"><i class="fa fa-dribbble"></i></a><a href="#"><i class="fa fa-skype"></i></a>
               </div>
+=======
+    <hr class="divider-d">
+    <footer class="footer bg-dark">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6">
+            <p class="copyright font-alt">&copy; 2017&nbsp;<a href="index.html">TitaN</a>, All Rights Reserved</p>
+          </div>
+          <div class="col-sm-6">
+            <div class="footer-social-links"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a
+                href="#"><i class="fa fa-dribbble"></i></a><a href="#"><i class="fa fa-skype"></i></a>
+>>>>>>> 3790e019e11990e5e329687f8af0cb1ea8f54433
             </div>
           </div>
         </div>
-      </footer>
+      </div>
+    </footer>
     </div>
     <div class="scroll-up"><a href="#totop"><i class="fa fa-angle-double-up"></i></a></div>
   </main>
@@ -1366,7 +1394,7 @@
   <script src="assets/js/plugins.js"></script>
   <script src="assets/components/color-selector.js"></script>
   <script src="assets/js/main.js"></script>
- 
+
 </body>
 
 </html>
