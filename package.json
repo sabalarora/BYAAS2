@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "lite-server --baseDir=\"webapp\""
+    "dev": "lite-server --baseDir=\"webapp\"",
+    "build": "grunt build"
   },
   "repository": {
     "type": "git",

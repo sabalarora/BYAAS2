@@ -26,6 +26,9 @@ module.exports = function (grunt) {
         clean: {
             build: {
                 src: ['build/']
+            }, 
+            cleanup:{
+                src: ["temp/"]
             }
         },
         concat: {
@@ -104,5 +107,5 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-processhtml');
 
     grunt.registerTask('default', ['jshint']);
-    grunt.registerTask('build', ['clean', 'concat', 'uglify','cssmin', 'copy', 'processhtml']);
+    grunt.registerTask('build', ['clean:build', 'concat', 'uglify','cssmin', 'copy', 'processhtml', 'clean:cleanup']);
 };
