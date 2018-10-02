@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-US" dir="ltr">
+
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -34,7 +35,7 @@
   <!-- build:css /assets/css/style.min.css -->
   <!-- Default stylesheets-->
   <link href="assets/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-  
+
   <!-- Template specific stylesheets-->
   <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Volkhov:400i" rel="stylesheet">
@@ -60,31 +61,34 @@
       <div class="loader">Loading...</div>
     </div>
     <nav class="navbar navbar-custom navbar-fixed-top navbar-transparent" role="navigation">
+       <a class="visible-xs navbar-brand" href="#">BYAAS</a>
       <div class="container-fluid">
-
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#custom-collapse" aria-expanded="false">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#custom-collapse"
+            aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
         </div>
-
         <div class="collapse navbar-collapse collapse in" id="custom-collapse">
-            <ul class="nav navbar-nav">
-                <li class="navbar-menu-item"><a class="section-scroll" href="#home" data-toggle="dropdown">Home</a></li>
-                <li class="navbar-menu-item"><a class="section-scroll" href="#gallery" data-toggle="dropdown">Decorative Panels</a></li>
-                <li class="navbar-menu-item"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Gates</a></li>
-                <li class="hidden-xs">
-                  <a class="navbar-center-item" href="#">
-                    <img src="assets/img/Byaas logo.jpg" width="75" height="92" alt="" />
-                  </a>
-                </li>
-                <li class="dropdown navbar-menu-item"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Railing</a></li>
-                <li class="dropdown navbar-menu-item"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Wall Accents</a></li>
-                <li class="dropdown navbar-menu-item"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Lighting & Décor</a></li>
-            </ul>
+          <ul class="nav navbar-nav">
+            <li class="navbar-menu-item"><a class="section-scroll" href="#home" data-toggle="dropdown">Home</a></li>
+            <li class="navbar-menu-item"><a class="section-scroll" href="#gallery" data-toggle="dropdown">Decorative
+                Panels</a></li>
+            <li class="navbar-menu-item"><a class="section-scroll" href="#gates" data-toggle="dropdown">Gates</a></li>
+            <li class="hidden-xs">
+              <a class="navbar-center-item" href="#">
+                <img src="assets/img/Byaas logo.jpg" width="75" height="92" alt="" />
+              </a>
+            </li>
+            <li class="dropdown navbar-menu-item"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Railing</a></li>
+            <li class="dropdown navbar-menu-item"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Wall
+                Accents</a></li>
+            <li class="dropdown navbar-menu-item"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Lighting &
+                Décor</a></li>
+          </ul>
           <!-- <ul class="nav navbar-nav navbar-left">
             <li class="dropdown"><a class="dropdown" href="#" data-toggle="dropdown">Home</a>
             </li>
@@ -106,52 +110,52 @@
             <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Lighting & Décor</a>
             </li>
             li.dropdown.navbar-cart-->
-            <!--    a.dropdown-toggle(href='#', data-toggle='dropdown')-->
-            <!--        span.icon-basket-->
-            <!--        |-->
-            <!--        span.cart-item-number 2-->
-            <!--    ul.dropdown-menu.cart-list(role='menu')-->
-            <!--        li-->
-            <!--            .navbar-cart-item.clearfix-->
-            <!--                .navbar-cart-img-->
-            <!--                    a(href='#')-->
-            <!--                        img(src='assets/images/shop/product-9.jpg', alt='')-->
-            <!--                .navbar-cart-title-->
-            <!--                    a(href='#') Short striped sweater-->
-            <!--                    |-->
-            <!--                    span.cart-amount 2 &times; $119.00-->
-            <!--                    br-->
-            <!--                    |-->
-            <!--                    strong.cart-amount $238.00-->
-            <!--        li-->
-            <!--            .navbar-cart-item.clearfix-->
-            <!--                .navbar-cart-img-->
-            <!--                    a(href='#')-->
-            <!--                        img(src='assets/images/shop/product-10.jpg', alt='')-->
-            <!--                .navbar-cart-title-->
-            <!--                    a(href='#') Colored jewel rings-->
-            <!--                    |-->
-            <!--                    span.cart-amount 2 &times; $119.00-->
-            <!--                    br-->
-            <!--                    |-->
-            <!--                    strong.cart-amount $238.00-->
-            <!--        li-->
-            <!--            .clearfix-->
-            <!--                .cart-sub-totle-->
-            <!--                    strong Total: $476.00-->
-            <!--        li-->
-            <!--            .clearfix-->
-            <!--                a.btn.btn-block.btn-round.btn-font-w(type='submit') Checkout-->
-            <!--li.dropdown-->
-            <!--    a.dropdown-toggle(href='#', data-toggle='dropdown') Search-->
-            <!--    ul.dropdown-menu(role='menu')-->
-            <!--        li-->
-            <!--            .dropdown-search-->
-            <!--                form(role='form')-->
-            <!--                    input.form-control(type='text', placeholder='Search...')-->
-            <!--                    |-->
-            <!--                    button.search-btn(type='submit')-->
-            <!--                        i.fa.fa-search
+          <!--    a.dropdown-toggle(href='#', data-toggle='dropdown')-->
+          <!--        span.icon-basket-->
+          <!--        |-->
+          <!--        span.cart-item-number 2-->
+          <!--    ul.dropdown-menu.cart-list(role='menu')-->
+          <!--        li-->
+          <!--            .navbar-cart-item.clearfix-->
+          <!--                .navbar-cart-img-->
+          <!--                    a(href='#')-->
+          <!--                        img(src='assets/images/shop/product-9.jpg', alt='')-->
+          <!--                .navbar-cart-title-->
+          <!--                    a(href='#') Short striped sweater-->
+          <!--                    |-->
+          <!--                    span.cart-amount 2 &times; $119.00-->
+          <!--                    br-->
+          <!--                    |-->
+          <!--                    strong.cart-amount $238.00-->
+          <!--        li-->
+          <!--            .navbar-cart-item.clearfix-->
+          <!--                .navbar-cart-img-->
+          <!--                    a(href='#')-->
+          <!--                        img(src='assets/images/shop/product-10.jpg', alt='')-->
+          <!--                .navbar-cart-title-->
+          <!--                    a(href='#') Colored jewel rings-->
+          <!--                    |-->
+          <!--                    span.cart-amount 2 &times; $119.00-->
+          <!--                    br-->
+          <!--                    |-->
+          <!--                    strong.cart-amount $238.00-->
+          <!--        li-->
+          <!--            .clearfix-->
+          <!--                .cart-sub-totle-->
+          <!--                    strong Total: $476.00-->
+          <!--        li-->
+          <!--            .clearfix-->
+          <!--                a.btn.btn-block.btn-round.btn-font-w(type='submit') Checkout-->
+          <!--li.dropdown-->
+          <!--    a.dropdown-toggle(href='#', data-toggle='dropdown') Search-->
+          <!--    ul.dropdown-menu(role='menu')-->
+          <!--        li-->
+          <!--            .dropdown-search-->
+          <!--                form(role='form')-->
+          <!--                    input.form-control(type='text', placeholder='Search...')-->
+          <!--                    |-->
+          <!--                    button.search-btn(type='submit')-->
+          <!--                        i.fa.fa-search
 
           </ul> -->
         </div>
@@ -164,7 +168,8 @@
             <div class="titan-caption">
               <div class="caption-content">
                 <div class="font-alt mb-30 titan-title-size-1">Hello &amp; welcome</div>
-                <div class="font-alt mb-40 titan-title-size-4">BYAAS</div><a class="section-scroll btn btn-border-w btn-round" href="#about">Learn More</a>
+                <div class="font-alt mb-40 titan-title-size-4">BYAAS</div><a class="section-scroll btn btn-border-w btn-round"
+                  href="#about">Learn More</a>
               </div>
             </div>
           </li>
@@ -172,7 +177,8 @@
             <div class="titan-caption">
               <div class="caption-content">
                 <div class="font-alt mb-30 titan-title-size-1">Hello &amp; welcome</div>
-                <div class="font-alt mb-40 titan-title-size-4">BYAAS</div><a class="section-scroll btn btn-border-w btn-round" href="#about">Learn More</a>
+                <div class="font-alt mb-40 titan-title-size-4">BYAAS</div><a class="section-scroll btn btn-border-w btn-round"
+                  href="#about">Learn More</a>
               </div>
             </div>
           </li>
@@ -180,13 +186,13 @@
             <div class="titan-caption">
               <div class="caption-content">
                 <div class="font-alt mb-30 titan-title-size-1">Hello &amp; welcome</div>
-                <div class="font-alt mb-40 titan-title-size-4">BYAAS</div><a class="section-scroll btn btn-border-w btn-round" href="#about">Learn More</a>
+                <div class="font-alt mb-40 titan-title-size-4">BYAAS</div><a class="section-scroll btn btn-border-w btn-round"
+                  href="#about">Learn More</a>
               </div>
             </div>
           </li>
         </ul>
       </div>
-      
     </section>
     <div class="main">
       <section class="module" id="about">
@@ -212,42 +218,43 @@
       </section>
       <hr class="divider-w">
       <section class="module" id="gallery">
-          <div class="container">
-              <div class="row">
-                  <div class="col-sm-6 col-sm-offset-3">
-                      <h2 class="module-title font-alt">Gallery</h2>
-                      <div class="module-subtitle font-serif">A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</div>
-                  </div>
-                  
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6 col-sm-offset-3">
+              <h2 class="module-title font-alt">Gallery</h2>
+              <div class="module-subtitle font-serif">A wonderful serenity has taken possession of my entire soul, like
+                these sweet mornings of spring which I enjoy with my whole heart.</div>
+            </div>
+
+          </div>
+          <a href="#menu-toggle" class="btn btn-secondary" id="menu-toggle">Toggle Menu</a>
+          <div class="row multi-columns-row">
+            <div class="gallery">
+              <h3>Images</h3>
+              <div class="gallery-images">
+                <div class="gallery-image">
+                  <img src="./assets/components/vectormasks/07.svg" />
+                </div>
+                <div class="gallery-image">
+                  <img src="./assets/components/vectormasks/100.svg" />
+                </div>
+                <div class="gallery-image">
+                  <img src="./assets/components/vectormasks/110.svg" />
+                </div>
+                <div class="gallery-image">
+                  <img src="./assets/components/vectormasks/111.svg" />
+                </div>
+                <div class="gallery-image">
+                  <img src="./assets/components/vectormasks/117.png" />
+                </div>
+                <div class="gallery-image">
+                  <img src="./assets/components/vectormasks/119.png" />
+                </div>
+                <div class="gallery-image">
+                  <img src="./assets/components/vectormasks/22.png" />
+                </div>
               </div>
-              <a href="#menu-toggle" class="btn btn-secondary" id="menu-toggle">Toggle Menu</a>
-              <div class="row multi-columns-row">
-                  <div class="gallery">
-                    <h3>Images</h3>
-                    <div class="gallery-images">
-                        <div class="gallery-image">
-                            <img src="./assets/components/vectormasks/07.svg" />
-                        </div>
-                        <div class="gallery-image">
-                            <img src="./assets/components/vectormasks/100.svg" />
-                        </div>
-                        <div class="gallery-image">
-                            <img src="./assets/components/vectormasks/110.svg" />
-                        </div>
-                        <div class="gallery-image">
-                            <img src="./assets/components/vectormasks/111.svg" />
-                        </div>
-                        <div class="gallery-image">
-                            <img src="./assets/components/vectormasks/117.png" />
-                        </div>
-                        <div class="gallery-image">
-                            <img src="./assets/components/vectormasks/119.png" />
-                        </div>
-                        <div class="gallery-image">
-                            <img src="./assets/components/vectormasks/22.png" />
-                        </div>
-                    </div>
-                  </div>
+            </div>
 
             <div class="swatches">
               <h3>Color Options</h3>
