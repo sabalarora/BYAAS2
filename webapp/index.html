@@ -55,13 +55,27 @@
   <!-- /build -->
 </head>
 
+
 <body data-spy="scroll" data-target=".navbar" data-offset="60">
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+      </div>
   <main>
     <div class="page-loader">
       <div class="loader">Loading...</div>
     </div>
     <nav class="navbar navbar-custom navbar-fixed-top navbar-transparent" role="navigation">
-       <a class="visible-xs navbar-brand" href="#">BYAAS</a>
+     
+       <a class="visible-xs navbar-brand" href="#">
+         <div class="logo-icon">
+            <img src="./assets/img/Byaas logo.png" />
+         </div>
+         BYAAS
+        </a>
       <div class="container-fluid">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#custom-collapse"
@@ -74,7 +88,7 @@
         </div>
         <div class="collapse navbar-collapse collapse in" id="custom-collapse">
           <ul class="nav navbar-nav">
-            <li class="navbar-menu-item"><a class="section-scroll" href="#home" data-toggle="dropdown">Home</a></li>
+            <li class="navbar-menu-item"><a class="section-scroll" href="#about" data-toggle="dropdown">Home</a></li>
             <li class="navbar-menu-item"><a class="section-scroll" href="#gallery" data-toggle="dropdown">Decorative
                 Panels</a></li>
             <li class="navbar-menu-item"><a class="section-scroll" href="#gates" data-toggle="dropdown">Gates</a></li>
@@ -161,6 +175,8 @@
         </div>
       </div>
     </nav>
+    
+    
     <section class="home-section home-parallax home-fade home-full-height" id="home">
       <div class="hero-slider">
         <ul class="slides">
@@ -196,7 +212,7 @@
     </section>
     <div class="main">
       <section class="module" id="about">
-        <div class="container">
+        <div class="container pp">
           <div class="row">
             <div class="col-sm-8 col-sm-offset-2">
               <h2 class="module-title font-alt">Welcome to BYAAS</h2>
@@ -215,22 +231,24 @@
             </div>
           </div>
         </div>
+        <hr class="divider-w">
       </section>
-      <hr class="divider-w">
+      
       <section class="module" id="gallery">
         <div class="container">
+            <div class="color-picker">
+                <img src="assets/img/Byrcolorwheel.png"/>
+            </div>
           <div class="row">
             <div class="col-sm-6 col-sm-offset-3">
               <h2 class="module-title font-alt">Gallery</h2>
               <div class="module-subtitle font-serif">A wonderful serenity has taken possession of my entire soul, like
                 these sweet mornings of spring which I enjoy with my whole heart.</div>
             </div>
-
           </div>
           <a href="#menu-toggle" class="btn btn-secondary" id="menu-toggle">Toggle Menu</a>
           <div class="row multi-columns-row">
             <div class="gallery">
-              <h3>Images</h3>
               <div class="gallery-images">
                 <div class="gallery-image">
                   <img src="./assets/components/vectormasks/07.svg" />

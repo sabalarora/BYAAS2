@@ -30,6 +30,7 @@ li.color{
     display: inline-block;
     width: 75px;
     height:75px;
+    transition: 0.1s;
 }
 li.color:hover{
     width: 100px;
@@ -47,8 +48,8 @@ li.color:hover{
     border: red 2px solid !important;
 }
 .gallery-image {
-    width: 200px;
-    height: 300px;
+    width: 135px;
+    height: 235px;
     display:inline-block;
 }
 
@@ -78,4 +79,42 @@ li.color:hover{
 }
 .swatch-texture-hammer-tor{
     background-image: url("../components/textures/720x1210px-bronze-hammertor.jpg");
+}
+.logo-icon{
+    display:inline-block;
+    position:relative;
+    width:50px;
+   margin-left:10px;
+   margin-top:2px;
+}
+.navbar-brand{
+    padding: 0px;
+}
+.pp{
+    height: calc(100vh);
+}
+.color-picker{
+    position: absolute;
+    width: 60px;
+    right: 0px;
+    opacity:0.3;
+    transition: 0.6s;
+}
+.color-picker:hover{
+    position: absolute;
+    width: 80px;
+    right: 0px;
+    opacity:1;
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
 }

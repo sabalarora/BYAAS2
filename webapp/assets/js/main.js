@@ -35,7 +35,12 @@ console.log('%c Proudly Crafted with ZiOn.', 'background: #222; color: #bada55')
         }).then(function(response){
             $(".gallery-image").prop("style", "background-color:black;");
         })
-
+        $(".color-picker").click(function(event){
+            debugger;
+            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("main").style.marginRight = "250px";
+        })
+       
         /* ---------------------------------------------- /*
          * Scroll top
          /* ---------------------------------------------- */
