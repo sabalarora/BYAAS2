@@ -21,7 +21,19 @@ module.exports = function (grunt) {
                         dest: 'build/'
                     }
                 ],
-            }
+            },
+            node_modules: {
+                files: [
+                    {
+                        expand: true,
+                        cwd: "./node_modules",
+                        src: ["handlebars/dist/handlebars.js"],
+                        dest: 'webapp/assets/lib/handlebars',
+                        flatten: true
+                    }
+                ],
+            },
+            
         },
         clean: {
             build: {
@@ -94,6 +106,16 @@ module.exports = function (grunt) {
                   'build/webapp/index.html': ['build/webapp/index.html']
                 }
               }
+          },
+        handlebars: {
+            compile: {
+              options: {
+                namespace: 'JST'
+              },
+              files: {
+                'webapp/assets/templates/templates.js': ['webapp/assets/templates/*.hbs']
+              }
+            }
           }
     });
 
@@ -105,7 +127,8 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-processhtml');
+    grunt.loadNpmTasks('grunt-contrib-handlebars');
 
     grunt.registerTask('default', ['jshint']);
-    grunt.registerTask('build', ['clean:build', 'concat', 'uglify','cssmin', 'copy', 'processhtml', 'clean:cleanup']);
+    grunt.registerTask('build', ['clean:build', 'concat', 'uglify','cssmin', 'copy:main', 'processhtml', 'clean:cleanup']);
 };

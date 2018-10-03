@@ -10,7 +10,27 @@ console.log('%c Proudly Crafted with ZiOn.', 'background: #222; color: #bada55')
     });
 
     $(document).ready(function() {
+        // var source = "<p>Hello, my name is {{name}}. I am from {{hometown}}. I have " +
+        // "{{kids.length}} kids:</p>" +
+        // "<ul>{{#kids}}<li>{{name}} is {{age}}</li>{{/kids}}</ul>";
+        // var template = Handlebars.compile(source);
 
+        // var data = { "name": "Alan", "hometown": "Somewhere, TX",
+        //         "kids": [{"name": "Jimmy", "age": "12"}, {"name": "Sally", "age": "4"}]};
+        // var result = template(data);
+        // console.log(result)
+    
+       
+        $.get("assets/patterns.json").then(function(response){
+            var result = JST["webapp/assets/templates/artwork.template.hbs"](response[0]);
+            $(".gallery-template").html(result)
+        })
+        $.get("assets/swatches.json").then(function(response){
+            debugger;
+            var result = JST["webapp/assets/templates/swatches.template.hbs"]({swatch: response})
+            console.log(result)
+        })
+       
         /* ---------------------------------------------- /*
          * WOW Animation When You Scroll
          /* ---------------------------------------------- */

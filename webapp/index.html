@@ -69,7 +69,6 @@
       <div class="loader">Loading...</div>
     </div>
     <nav class="navbar navbar-custom navbar-fixed-top navbar-transparent" role="navigation">
-     
        <a class="visible-xs navbar-brand" href="#">
          <div class="logo-icon">
             <img src="./assets/img/Byaas logo.png" />
@@ -248,31 +247,7 @@
           </div>
           <a href="#menu-toggle" class="btn btn-secondary" id="menu-toggle">Toggle Menu</a>
           <div class="row multi-columns-row">
-            <div class="gallery">
-              <div class="gallery-images">
-                <div class="gallery-image">
-                  <img src="./assets/components/vectormasks/07.svg" />
-                </div>
-                <div class="gallery-image">
-                  <img src="./assets/components/vectormasks/100.svg" />
-                </div>
-                <div class="gallery-image">
-                  <img src="./assets/components/vectormasks/110.svg" />
-                </div>
-                <div class="gallery-image">
-                  <img src="./assets/components/vectormasks/111.svg" />
-                </div>
-                <div class="gallery-image">
-                  <img src="./assets/components/vectormasks/117.png" />
-                </div>
-                <div class="gallery-image">
-                  <img src="./assets/components/vectormasks/119.png" />
-                </div>
-                <div class="gallery-image">
-                  <img src="./assets/components/vectormasks/22.png" />
-                </div>
-              </div>
-            </div>
+              <div class="gallery-template"></div>
 
             <div class="swatches">
               <h3>Color Options</h3>
@@ -1400,11 +1375,15 @@
   <script src="assets/lib/smoothscroll.js"></script>
   <script src="assets/lib/magnific-popup/dist/jquery.magnific-popup.js"></script>
   <script src="assets/lib/simple-text-rotator/jquery.simple-text-rotator.min.js"></script>
+  <script src="assets/lib/handlebars/handlebars.js"></script>
+  <script src="assets/templates/templates.js"></script>
   <script src="assets/js/plugins.js"></script>
   <script src="assets/components/color-selector.js"></script>
   <script src="assets/js/main.js"></script>
+  
   <!-- /build -->
-
+  <!-- build:templates /assets/templates.min.js -->
+  <!-- /build -->
 </body>
 
 </html>

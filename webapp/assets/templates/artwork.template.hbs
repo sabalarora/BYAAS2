@@ -1,0 +1,12 @@
+<div class="gallery">
+    <h2>{{name}}</h2>
+    <hr/>
+    <div class="gallery-images">
+        {{#each items}}
+        <div class="gallery-image">
+            <img src="{{this.url}}" />
+            <span>{{this.name}}</span>
+        </div>
+        {{/each}}
+    </div>
+</div>

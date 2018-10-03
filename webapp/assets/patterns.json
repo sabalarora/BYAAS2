@@ -1,0 +1,55 @@
+
+[
+    {
+        "name": "Natural Patterns",
+        "key": "natural",
+        "items": [{
+            "name": "07",
+            "url": "./assets/components/vectormasks/07.svg"
+        },{
+            "name": "",
+            "url": "./assets/components/vectormasks/100.svg"
+        },{
+            "name": "",
+            "url": "./assets/components/vectormasks/110.svg"
+        },{
+            "name": "",
+            "url": "./assets/components/vectormasks/111.svg"
+        },{
+            "name": "",
+            "url": "./assets/components/vectormasks/117.png"
+        },{
+            "name": "",
+            "url": "./assets/components/vectormasks/119.png"
+        },{
+            "name": "",
+            "url": "./assets/components/vectormasks/22.png"
+        }]
+    },
+    {
+        "name": "Geometric",
+        "key": "geometric",
+        "items": []
+    },
+    {
+        "name": "Cultural",
+        "key": "cultural",
+        "items": []
+    },
+    {
+        "name": "Cultural",
+        "key": "abstract",
+        "items": [{
+            "name": "",
+            "url": ""
+        }]
+    },
+    {
+        "name": "Creatures",
+        "key": "creatures",
+        "items": [{
+            "name": "",
+            "url": ""
+        }]
+    }
+]
