@@ -5,9 +5,9 @@ this["JST"]["webapp/assets/templates/artwork.template.hbs"] = Handlebars.templat
 
   return "        <div class=\"gallery-image\">\n            <img src=\""
     + alias2(alias1((depth0 != null ? depth0.url : depth0), depth0))
-    + "\" />\n            <span>"
+    + "\" />\n            <div>\n<span style=\"color:red;bottom: 0px;\">"
     + alias2(alias1((depth0 != null ? depth0.name : depth0), depth0))
-    + "</span>\n        </div>\n";
+    + "</span>   \n            </div>\n            \n        </div>\n";
 },"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
     var stack1, helper, alias1=depth0 != null ? depth0 : (container.nullContext || {});
 
@@ -33,9 +33,9 @@ this["JST"]["webapp/assets/templates/swatches.template.hbs"] = Handlebars.templa
 },"3":function(container,depth0,helpers,partials,data) {
     var alias1=container.lambda, alias2=container.escapeExpression;
 
-  return "                <div class=\""
+  return "                <div style=\"background-color=\\\""
     + alias2(alias1((depth0 != null ? depth0.color : depth0), depth0))
-    + "\">"
+    + "\\\"\"\">"
     + alias2(alias1((depth0 != null ? depth0.name : depth0), depth0))
     + "</div>\n";
 },"5":function(container,depth0,helpers,partials,data) {

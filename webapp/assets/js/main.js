@@ -26,7 +26,6 @@ console.log('%c Proudly Crafted with ZiOn.', 'background: #222; color: #bada55')
             $(".gallery-template").html(result)
         })
         $.get("assets/swatches.json").then(function(response){
-            debugger;
             var result = JST["webapp/assets/templates/swatches.template.hbs"]({swatch: response})
             console.log(result)
         })
@@ -55,10 +54,20 @@ console.log('%c Proudly Crafted with ZiOn.', 'background: #222; color: #bada55')
         }).then(function(response){
             $(".gallery-image").prop("style", "background-color:black;");
         })
+        var isColorPickerOpen;
         $(".color-picker").click(function(event){
-            debugger;
-            document.getElementById("mySidenav").style.width = "250px";
-            document.getElementById("main").style.marginRight = "250px";
+            if(!isColorPickerOpen){
+                document.getElementById("mySidenav").style.width = "500px";
+                document.getElementById("main").style.marginRight = "500px";
+                isColorPickerOpen = true
+            }else{
+                debugger;
+                document.getElementById("mySidenav").style.width = "0px";
+                document.getElementById("main").style.marginRight = "0px";
+                isColorPickerOpen = false
+            }
+
+           
         })
        
         /* ---------------------------------------------- /*

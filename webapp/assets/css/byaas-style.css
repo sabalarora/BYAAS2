@@ -26,10 +26,10 @@
 }
 
 li.color{
-    border: 2px #cccccc solid;
+    border: 1px #cccccc solid;
     display: inline-block;
-    width: 75px;
-    height:75px;
+    width: 35px;
+    height:35px;
     transition: 0.1s;
 }
 li.color:hover{
@@ -110,11 +110,13 @@ li.color:hover{
     height: 100%;
     width: 0;
     position: fixed;
-    z-index: 1;
+    z-index: 4;
     top: 0;
-    left: 0;
+    right: 0;
     background-color: #111;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
+    color:white;
+
 }
