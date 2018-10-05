@@ -58,12 +58,15 @@ console.log('%c Proudly Crafted with ZiOn.', 'background: #222; color: #bada55')
         $(".color-picker").click(function(event){
             if(!isColorPickerOpen){
                 document.getElementById("mySidenav").style.width = "500px";
-                document.getElementById("main").style.marginRight = "500px";
+                $(".navbar, section").css("margin-right","500px")
+                            .css("margin-left","-500px");
+                
+                
                 isColorPickerOpen = true
             }else{
-                debugger;
                 document.getElementById("mySidenav").style.width = "0px";
-                document.getElementById("main").style.marginRight = "0px";
+                $(".navbar, section").css("margin-right","0px")
+                            .css("margin-left","0px");
                 isColorPickerOpen = false
             }
 

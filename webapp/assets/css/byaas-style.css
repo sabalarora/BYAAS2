@@ -1,3 +1,6 @@
+.navbar{
+    transition: 0.5s;
+}
 .navbar-center-item{
     padding: 0px !important;
 }
@@ -48,8 +51,8 @@ li.color:hover{
     border: red 2px solid !important;
 }
 .gallery-image {
-    width: 135px;
-    height: 235px;
+    width: 235px;
+    height: 335px;
     display:inline-block;
 }
 
@@ -119,4 +122,7 @@ li.color:hover{
     padding-top: 60px;
     color:white;
 
+}
+section{
+    transition: 0.5s;
 }
