@@ -97,16 +97,19 @@ li.color:hover{
     height: calc(100vh);
 }
 .color-picker{
-    position: absolute;
+    position: fixed;
     width: 60px;
-    right: 0px;
+    height: 60px;
     opacity:0.3;
-    transition: 0.6s;
+    transition: 0.8s;
+    right: 0px;
+    top: 15%;
+    border: 1px solid black;
+    box-shadow: 6px 6px 5px grey;
 }
 .color-picker:hover{
-    position: absolute;
-    width: 80px;
-    right: 0px;
+    width: 65px;
+    height: 65px;
     opacity:1;
 }
 .sidenav {
@@ -116,7 +119,7 @@ li.color:hover{
     z-index: 4;
     top: 0;
     right: 0;
-    background-color: #111;
+    background-color: #222222;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
