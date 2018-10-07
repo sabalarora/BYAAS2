@@ -1,55 +1,4 @@
 (function($){
-    // var swatchesColor =  $(".swatches-color");
-    // var swatchesTextures =  $(".swatches-texture");
-    // var swatchesDescriptionName = $(".swatches-description-name");
-    // function generateColorSwatches(colorList){
-    //     var listItems = colorList.reduce(function(agg,value){
-    //         return agg + "<li class=\"color hide-text color-selection\" style=\"background-color:"+value.color+"\">" + value.name + "</li>";   
-    //     },"");
-    //     return "<ul>"+listItems+"</ul>"
-    // }
-    // function generateTextureSwatches(textureList){
-    //     var listItems = textureList.reduce(function(agg,value){
-    //         return agg + "<li class=\"color hide-text color-selection "+ value.class+ "\" data-color=\""+value.class+"\">" + value.name + "</li>";   
-    //     },"");
-    //     return "<ul>"+listItems+"</ul>"
-    // }
-
-    // $.fn.colorSelector = function(options){
-    //     var defer = $.Deferred();
-    //     options = $.extend({}, $.fn.colorSelector.defaults, options || {});
-        
-    //     if(options.url){
-    //         $.get(options.url).then(function(response){
-    //             swatchesColor.html(generateColorSwatches(response.colors));
-    //             swatchesTextures.html(generateTextureSwatches(response.textures));
-    //             $(".color-selection").click(function(event){
-    //                 $(".color-is-selected").removeClass("color-is-selected");
-    //                 $(this).addClass("color-is-selected");
-    //                 swatchesDescriptionName.html(event.target.textContent);
-    //                 options.onSwatchClicked.call(this, {
-    //                     textContent : event.target.textContent,
-    //                     colorCss: $(event.currentTarget).data("color")
-    //                 })
-    //             });
-    //             defer.resolve(response.colors[0])
-    //         });
-    //     }
-       
-    //     return defer.promise();
-    // }
-    
-    // $.fn.colorSelector.defaults = {
-    //     url: null,
-    //     onSwatchClicked: null
-    // };
-//   <div class="swatches">
-//     <div class="swatches-color"></div>
-//     <div class="swatches-texture"></div>
-//     <div class="swatches-description">
-//       <h3>Color: <span class="swatches-description-name"></span></h3>
-//     </div>
-// </div> 
     var colorSwatchContainer = $(".swatch-container");
     var colorSwatchColors = $(".swatch-colors");
     var colorSwatchTextures = $(".swatch-textures");
@@ -62,10 +11,7 @@
         return "<ul>"+listItems+"</ul>"
     }
     function generateTextureSwatches(textureList){
-        
         var listItems = textureList.reduce(function(agg,value){
-            
-       
             return agg + "<li class=\"color hide-text color-selection "+ value.class+ "\" data-background-url=\""+value.url+"\" style=\"background-image: url("+value.url+")\">" + value.name + "</li>";   
         },"");
         return "<ul>"+listItems+"</ul>"
@@ -92,9 +38,13 @@
                         }
                     }
                     $(".gallery-image").css(targetCSS);
+                    //this.toggleClass("swatch-selected-item", true)
                     colorSwatchDescription.html(event.target.textContent);
+                    $(".swatch-selected-item").removeClass("swatch-selected-item");
+                    $(this).toggleClass("swatch-selected-item", true);
                 })
-            
+                $(".swatch-colors ul li:nth-child(1)").toggleClass("swatch-selected-item", true)
+                colorSwatchDescription.html(response.colors[0].name);
                 $(".gallery-image").css({backgroundColor: response.colors[0].color});
                 defer.resolve(response.colors[0]);
             });

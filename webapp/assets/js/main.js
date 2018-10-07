@@ -21,14 +21,7 @@ console.log('%c Proudly Crafted with ZiOn.', 'background: #222; color: #bada55')
         // console.log(result)
     
        
-        $.get("assets/patterns.json").then(function(response){
-            var result = JST["webapp/assets/templates/artwork.template.hbs"](response[0]);
-            $(".gallery-template").html(result)
-        })
-        $.get("assets/swatches.json").then(function(response){
-            var result = JST["webapp/assets/templates/swatches.template.hbs"]({swatch: response})
-            console.log(result)
-        })
+     
        
         /* ---------------------------------------------- /*
          * WOW Animation When You Scroll
@@ -38,24 +31,13 @@ console.log('%c Proudly Crafted with ZiOn.', 'background: #222; color: #bada55')
             mobile: false
         });
         wow.init();
+        $.get("assets/patterns.json").then(function(response){
+            var result = JST["webapp/assets/templates/artwork.template.hbs"](response[0]);
+            $(".gallery-template").html(result)
+        })
         $(".swatch-container").colorSwatches({
             url: "./assets/color-swatches.json"
         })
-        // var lastClassSet = null;
-        // $(".swatches").colorSelector({
-        //     url: "./assets/components/color-swatches.json",
-        //     onSwatchClicked: function(event){
-        //         $(".gallery-image").removeClass(lastClassSet);
-        //         if(event.colorCss){
-        //             $(".gallery-image").addClass(event.colorCss);
-        //             lastClassSet = event.colorCss;
-        //             return;
-        //         }
-        //         $(".gallery-image").prop("style", "background-color:"+event.textContent+";");
-        //     }
-        // }).then(function(response){
-        //     $(".gallery-image").prop("style", "background-color:black;");
-        // })
        
         /* ---------------------------------------------- /*
          * Scroll top

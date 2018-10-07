@@ -1,89 +1,92 @@
-.navbar{
+.navbar {
     transition: 0.5s;
 }
-.navbar-center-item{
+
+.navbar-center-item {
     padding: 0px !important;
 }
-@media (min-width: 768px){
+
+@media (min-width: 768px) {
     .navbar-center-item {
         padding-left: 20px !important;
         padding-right: 20px !important;
     }
 }
-.navbar-menu-item{
-    padding-top:20px;
+
+.navbar-menu-item {
+    padding-top: 20px;
 }
+
 .navbar-nav {
     width: 100%;
     text-align: center;
 }
-.navbar-nav > li {
+
+.navbar-nav>li {
     float: none;
-    display: inline-block; 
+    display: inline-block;
 }
-@media (max-width: 767px){
-    .navbar-nav > li {
+
+@media (max-width: 767px) {
+    .navbar-nav>li {
         float: none;
-        display: block; 
+        display: block;
     }
 }
 
-li.color{
-    border: 1px #cccccc solid;
-    display: inline-block;
-    width: 50px;
-    height:50px;
-    transition: 0.1s;
-}
-li.color:hover{
-    width: 100px;
-    height:100px;
-}
-.hide-text{
+
+.hide-text {
     text-indent: 100%;
     white-space: nowrap;
     overflow: hidden;
 }
-.swatches > div > ul > li{
-    margin-left:5px;
+
+.swatches>div>ul>li {
+    margin-left: 5px;
 }
-.color-is-selected{
+
+.color-is-selected {
     border: red 2px solid !important;
 }
+
 .gallery-image {
     width: 165px;
     height: 265px;
-    display:inline-block;
+    display: inline-block;
 }
 
-.logo-icon{
-    display:inline-block;
-    position:relative;
-    width:50px;
-   margin-left:10px;
-   margin-top:2px;
+.logo-icon {
+    display: inline-block;
+    position: relative;
+    width: 50px;
+    margin-left: 10px;
+    margin-top: 2px;
 }
-.navbar-brand{
+
+.navbar-brand {
     padding: 0px;
 }
-.pp{
+
+.pp {
     height: calc(100vh);
 }
-.color-picker{
+
+.color-picker {
     position: fixed;
     width: 60px;
     height: 60px;
-    opacity:0.3;
+    opacity: 0.3;
     transition: 0.8s;
     right: 0px;
     top: 15%;
     border: 1px solid black;
     box-shadow: 6px 6px 5px grey;
 }
-.color-picker:hover{
+
+.color-picker:hover {
     width: 65px;
     height: 65px;
-    opacity:1;
+    opacity: 1;
 }
 
 /* @media (max-width: 768px){
@@ -91,16 +94,10 @@ li.color:hover{
         width: 25%;
     }
 } */
-section{
+section {
     transition: 0.5s;
 }
 
-.byaas-fx-drop-shadow{
+.byaas-fx-drop-shadow {
     box-shadow: 6px 6px 5px grey;
 }
-.swatches ul {
-    padding-inline-start: 0px;
-}
-/* .byaas-fx-hover{
-
-} */
