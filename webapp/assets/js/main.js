@@ -31,10 +31,12 @@ console.log('%c Proudly Crafted with ZiOn.', 'background: #222; color: #bada55')
             mobile: false
         });
         wow.init();
+
         $.get("assets/patterns.json").then(function(response){
             var result = JST["webapp/assets/templates/artwork.template.hbs"](response[0]);
             $(".gallery-template").html(result)
         })
+        
         $(".swatch-container").colorSwatches({
             url: "./assets/color-swatches.json"
         })

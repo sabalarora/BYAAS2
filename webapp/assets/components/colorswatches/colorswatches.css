@@ -8,16 +8,18 @@
 .swatch-description{}
 .swatch-description-name{}
 .swatch-selected-item{
-    border: 3px #ffffff solid !important;
+    border: 2px #ff0000 solid !important;
 }
 li.color{
     border: 1px #cccccc solid;
     display: inline-block;
     width: 50px;
-    height:50px;
+    height: 50px;
     transition: 0.1s;
+    margin-left: 5px;
+    box-shadow: 6px 6px 5px #111111;
 }
 li.color:hover{
-    width: 100px;
-    height:100px;
+    width: 65px;
+    height:65px;
 }
