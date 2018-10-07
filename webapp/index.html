@@ -57,43 +57,32 @@
 
 
 <body data-spy="scroll" data-target=".navbar" data-offset="60">
-    <div id="mySidenav" class="sidenav">
-        <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> -->
-        <!-- <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Clients</a>
-        <a href="#">Contact</a> -->
-        <div class="container">
-          <div class="row">
-            <div class="col-xs-12">
-
-                <div class="swatches">
-                    <h3>Color Options</h3>
-                    <hr />
-                    <div class="swatches-color"></div>
-                    <hr />
-                    <div class="swatches-texture"></div>
-                    <hr />
-                    <div class="swatches-description">
-                      <span class="swatches-description-name"></span>
-                    </div>
-                  </div>
-
-            </div>
+  <div id="mySidenav" class="sidenav" style="padding-top:10px;">
+      <div style="padding-left:15px;padding-right:15px;float:right;margin-top: -15px">
+          <a href="javascript:void(0)" class="closebtn" style="font-size:4em;" onclick="closeNav()">&times;</a>
+      </div>
+      <h3>Color Options</h3>
+      <div class="swatches">
+          <div class="swatches-color"></div>
+          <div class="swatches-texture"></div>
+          <div class="swatches-description">
+            <h3>Color: <span class="swatches-description-name"></span></h3>
+          </div>
         </div>
-      </div>     
   </div>
+
+
   <main id="main">
     <div class="page-loader">
       <div class="loader">Loading...</div>
     </div>
     <nav class="navbar navbar-custom navbar-fixed-top navbar-transparent" role="navigation">
-       <a class="visible-xs navbar-brand" href="#">
-         <div class="logo-icon">
-            <img src="./assets/img/Byaas logo.png" />
-         </div>
-         BYAAS
-        </a>
+      <a class="visible-xs navbar-brand" href="#">
+        <div class="logo-icon">
+          <img src="./assets/img/Byaas logo.png" />
+        </div>
+        BYAAS
+      </a>
       <div class="container-fluid">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#custom-collapse"
@@ -193,8 +182,8 @@
         </div>
       </div>
     </nav>
-    
-    
+
+
     <section class="home-section home-parallax home-fade home-full-height" id="home">
       <div class="hero-slider">
         <ul class="slides">
@@ -251,25 +240,26 @@
         </div>
         <hr class="divider-w">
       </section>
-      
+
       <section class="module" id="gallery">
         <div class="container">
           <div class="row">
             <div class="col-sm-6 col-sm-offset-3">
               <h2 class="module-title font-alt">Decorative Panels</h2>
-              <div class="module-subtitle font-serif"></div>
-              <!-- <div class="module-subtitle font-serif">A wonderful serenity has taken possession of my entire soul, like
-                these sweet mornings of spring which I enjoy with my whole heart.</div>
-            </div> -->
+              <div class="module-subtitle font-serif">
+                <!-- A wonderful serenity has taken possession of my entire soul, like
+                these sweet mornings of spring which I enjoy with my whole heart. -->
+              </div>
+            </div>
           </div>
           <div class="color-picker">
-              <img src="assets/img/Byrcolorwheel.png"/>
+            <img src="assets/img/Byrcolorwheel.png" />
           </div>
-          <a href="#menu-toggle" class="btn btn-secondary" id="menu-toggle">Toggle Menu</a>
+          <!-- <a href="#menu-toggle" class="btn btn-secondary" id="menu-toggle">Toggle Menu</a> -->
           <div class="row multi-columns-row">
-              <div class="gallery-template"></div>
+            <div class="gallery-template"></div>
 
-       
+
             <!-- <div class="col-md-3 col-sm-6 col-xs-12">
                     <div class="features-item">
                       <div class="features-icon"><span class="icon-lightbulb"></span></div>
@@ -1390,7 +1380,7 @@
   <script src="assets/js/plugins.js"></script>
   <script src="assets/components/color-selector.js"></script>
   <script src="assets/js/main.js"></script>
-  
+
   <!-- /build -->
   <!-- build:templates /assets/templates.min.js -->
   <!-- /build -->
