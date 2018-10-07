@@ -53,6 +53,8 @@
     width: 165px;
     height: 265px;
     display: inline-block;
+    /*position: relative; */
+    /* overflow: none;  */
 } 
 
 .pp {
