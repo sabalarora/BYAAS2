@@ -56,33 +56,6 @@ li.color:hover{
     display:inline-block;
 }
 
-.swatch-color-black{
-    background-color: black;
-}
-.swatch-color-red{
-    background-color: red;
-}
-.swatch-color-blue{
-    background-color: blue;
-}
-.swatch-color-green{
-    background-color: green;
-}
-.swatch-color-light-blue{
-    background-image: url("../components/colors/220x350-blue-gloss-0069e1.jpg");
-}
-.swatch-texture-black-vein{
-    background-image: url("../components/textures/720x1210px-black-vein.jpg");
-}
-.swatch-texture-silver-vein{
-    background-image: url("../components/textures/720x1210px-silver-vein.jpg");
-}
-.swatch-texture-copper-vein{
-    background-image: url("../components/textures/720x1210px-copper-vein.jpg");
-}
-.swatch-texture-hammer-tor{
-    background-image: url("../components/textures/720x1210px-bronze-hammertor.jpg");
-}
 .logo-icon{
     display:inline-block;
     position:relative;
@@ -112,20 +85,7 @@ li.color:hover{
     height: 65px;
     opacity:1;
 }
-.sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 4;
-    top: 0;
-    right: 0;
-    background-color: #222222;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-    color:white;
 
-}
 /* @media (max-width: 768px){
     .sidenav{
         width: 25%;

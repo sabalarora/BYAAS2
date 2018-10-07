@@ -1,7 +1,6 @@
-[
-    {
-        "name": "Colors",
-        "items": [ {
+{
+    "colors" : [
+        {
             "name" : "black",
             "color" : "#000000"
         },
@@ -28,30 +27,33 @@
         {
             "name" : "blue",
             "color" : "#0116b1"
-        }]
-    },
-    {
-        "name": "Textures",
-        "items": [ 
+        }
+        
+    ],
+    "textures": [ 
         {
             "name" : "black-vein",
+            "url": "../assets/img/textures/720x1210px-black-vein.jpg",
             "class": "swatch-texture-black-vein"
         },
         {
             "name" : "light blue",
+            "url": "../assets/img/colors/220x350-blue-gloss-0069e1.jpg",
             "class" : "swatch-color-light-blue"
         },
         {
             "name" : "hammer-tor",
+            "url": "../assets/img/textures/720x1210px-bronze-hammertor.jpg",
             "class" : "swatch-texture-hammer-tor"
         },
         {
             "name" : "copper-vien",
+            "url": "../assets/img/textures/720x1210px-copper-vein.jpg",
             "class" : "swatch-texture-copper-vien"
         },
         {
             "name" : "silver-vien",
+            "url": "../assets/img/textures/720x1210px-silver-vein.jpg",
             "class" : "swatch-texture-silver-vien"
         }]
-    }
-]
+}

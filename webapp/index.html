@@ -52,6 +52,9 @@
   <link href="assets/css/style.css" rel="stylesheet">
   <link href="assets/css/colors/default.css" rel="stylesheet" id="color-scheme">
   <link href="assets/css/byaas-style.css" rel="stylesheet">
+  <link href="assets/components/sidepanel/sidepanel.css" rel="stylesheet">
+  <link href="assets/components/colorswatches/colorswatches.css" rel="stylesheet">
+
   <!-- /build -->
 </head>
 
@@ -59,16 +62,16 @@
 <body data-spy="scroll" data-target=".navbar" data-offset="60">
   <div id="mySidenav" class="sidenav" style="padding-top:10px;">
       <div style="padding-left:15px;padding-right:15px;float:right;margin-top: -15px">
-          <a href="javascript:void(0)" class="closebtn" style="font-size:4em;" onclick="closeNav()">&times;</a>
+          <a href="javascript:void(0)" class="closebtn sidenav-trigger" style="font-size:4em;" >&times;</a>
       </div>
       <h3>Color Options</h3>
-      <div class="swatches">
-          <div class="swatches-color"></div>
-          <div class="swatches-texture"></div>
-          <div class="swatches-description">
-            <h3>Color: <span class="swatches-description-name"></span></h3>
+      <div class="swatch-container">
+          <div class="swatch-colors"></div>
+          <div class="swatch-textures"></div>
+          <div class="swatch-description">
+            <h3>Color: <span class="swatch-description-name"></span></h3>
           </div>
-        </div>
+      </div>
   </div>
 
 
@@ -1378,7 +1381,8 @@
   <script src="assets/lib/handlebars/handlebars.js"></script>
   <script src="assets/templates/templates.js"></script>
   <script src="assets/js/plugins.js"></script>
-  <script src="assets/components/color-selector.js"></script>
+  <script src="assets/components/sidepanel/sidepanel.js"></script>
+  <script src="assets/components/colorswatches/colorswatches.js"></script>
   <script src="assets/js/main.js"></script>
 
   <!-- /build -->

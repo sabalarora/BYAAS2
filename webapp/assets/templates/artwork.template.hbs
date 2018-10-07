@@ -1,14 +1,13 @@
 <div class="gallery">
     <h2>{{name}}</h2>
-    <hr/>
+    <hr />
     <div class="gallery-images">
         {{#each items}}
         <div class="gallery-image">
             <img src="{{this.url}}" />
             <div>
-<span style="color:red;bottom: 0px;">{{this.name}}</span>   
+                <span style="color:red;bottom: 0px;">{{this.name}}</span>
             </div>
-            
         </div>
         {{/each}}
     </div>

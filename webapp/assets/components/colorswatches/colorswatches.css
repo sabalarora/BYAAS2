@@ -1,0 +1,33 @@
+/* .swatch-tile{
+    width: 45px;
+    height: 45px;
+}
+.swatch-target{
+    background-color: #000000;
+} */
+
+
+/* .swatches-color{
+
+}
+.swatches-texture{
+
+}
+.swatches-description{
+
+}
+
+.swatches-description-name{
+
+}
+
+.color-selection{
+
+} */
+.swatch-container{}
+.swatch-colors ul,
+.swatch-textures ul{
+    padding-inline-start: 0px;
+}
+.swatch-container .swatch-description{}
+.swatch-container .swatch-description .swatch-description-name{}
