@@ -1,0 +1,14 @@
+<div class="container">
+    {{#each swatch}}
+        <h2>{{this.name}}</h2><hr/>
+        {{#each this.items}}
+            {{#if this.color}}
+                <div style="background-color=\"{{this.color}}\""">{{this.name}}</div>
+            {{/if}}
+            {{#if this.class}}
+                <div class="{{this.class}}">{{this.name}}</div>
+            {{/if}}
+        {{/each}}
+    {{/each}}
+</div>
+
