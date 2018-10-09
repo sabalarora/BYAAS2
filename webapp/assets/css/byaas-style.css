@@ -68,9 +68,10 @@
     opacity: 0.3;
     transition: 0.8s;
     right: 0px;
-    top: 15%;
+    top: 25%;
     border: 1px solid black;
     box-shadow: 6px 6px 5px grey;
+    z-index: 2000 !important;
 }
 .color-picker:hover {
     width: 65px;

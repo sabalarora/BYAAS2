@@ -9,7 +9,7 @@
             }else{                 
                 isColorPickerOpen = false
             }
-            $(".navbar, section, .color-picker").toggleClass("sidenav-offset-content", isColorPickerOpen)
+            $(".color-picker").toggleClass("sidenav-offset-content", isColorPickerOpen)
             $(".sidenav").toggleClass("sidenav-open", isColorPickerOpen)
         })
     }
