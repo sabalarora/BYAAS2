@@ -2,7 +2,7 @@
     height: 100%;
     width: 0;
     position: fixed;
-    z-index: 4;
+    z-index: 2000;
     top: 0;
     right: 0;
     background-color: #222222;
@@ -10,10 +10,18 @@
     transition: 0.5s;
     padding-top: 60px;
     color:white;
-
+    opacity: 0;
 }
 .sidenav-open{
     width: 30% !important;
+    opacity: 1;
+}
+.sidenav > *{
+    opacity: 0;
+    transition: 1s;
+}
+.sidenav-open > *{
+    opacity: 1;
 }
 .sidenav-offset-content{
     margin-left:-30%;
